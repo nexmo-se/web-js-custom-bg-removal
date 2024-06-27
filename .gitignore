@@ -1,0 +1,11 @@
+.env
+*.key
+*.log
+
+docker-compose.yml
+Dockerfile
+
+node_modules
+temp
+
+vcr.yaml

@@ -8,6 +8,7 @@ const stylesHandler = "style-loader";
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+console.log("the port is", process.env.NERU_APP_PORT);
 const config = {
   entry: "./src/index.js",
   output: {
@@ -16,7 +17,8 @@ const config = {
   },
   devServer: {
     open: true,
-    host: "0.0.0.0",
+    host: `localhost`,
+    port: process.env.NERU_APP_PORT || 3000,
   },
   plugins: [
     // Add your plugins here

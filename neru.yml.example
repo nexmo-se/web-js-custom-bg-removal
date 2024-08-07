@@ -1,0 +1,15 @@
+project:
+    name: web-js-custom-bg-removal
+instance:
+    name: dev
+    runtime: nodejs16
+    region: aws.apse1
+    application-id: 11111111-2222-3333-4444-555555555555
+    entrypoint:
+        - npm
+        - start
+debug:
+    name: debug
+    entrypoint:
+        - npm
+        - start

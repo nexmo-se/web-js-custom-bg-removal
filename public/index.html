@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transparent Background</title>
-    <script src="https://unpkg.com/lodash@4.17.20"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-    <style>
-      .OT_widget-container {
-        background: none !important;
-        background-color: transparent !important;
-      }
-      .hidden { display: none; }
-      .streamer-mode {
-        position: relative;
-        height: 40% !important;
-        width: 40%;
-        top: -40%;
-      }
-    </style>
+    <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Vonage Media Processor Demo</title>
   </head>
-  
-  <body class="bg-gray-200 min-h-screen flex justify-center items-center">
-    <div class="flex w-[1200px] lg:w-[1200px] xl:w-[1200px]bg-white rounded-lg border border-primaryBorder shadow-default">
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-      <div class="w-1/2 p-6 h-100">
-        <div id="screen" class="h-full hidden"></div>
-        <div id="publisher" class="h-full"></div>
-      </div>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-      <div class="w-1/2 p-6">
-        <h1 class="text-2xl font-medium text-primary mt-4 mb-12">Transparent Background Transformer</h1>
-        <div id="blur-watermark-form" style="min-height: 50px;">
-          <button id="apply-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">Apply Transformer</button>
-          <button id="clear-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">Clear Transformer</button>
-        </div>
-        <div id="blur-watermark-form" style="min-height: 200px;">
-          <button id="ss-start-btn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-5">Start Screen Sharing</button>
-          <button id="ss-stop-btn" class="hidden bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-5">Stop Screen Sharing</button>
-        </div>
-      </div>
-    </div>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>

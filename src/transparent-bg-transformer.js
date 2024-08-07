@@ -1,3 +1,10 @@
+/* eslint-disable no-unused-vars */
+/* global VideoFrame */
+
+import {
+	SAMPLE_SERVER_BASE_URL
+  } from './config';
+  
 import '@tensorflow/tfjs-core/dist/tf-core.min.js'
 import '@tensorflow/tfjs-backend-webgl/dist/tf-backend-webgl.min.js'
 import * as bodySegmentation from '@tensorflow-models/body-segmentation';
@@ -9,6 +16,8 @@ export default class Transformer {
 		this.canvas_ = null;
 		this.ctx_ = null;    
 	}
+
+	setTransformType(transformType) { this.transformType = transformType; }
 
 	// We are using the mediapipe selfie segmentation solution bundle
 	// You can use the ones available in this cdn https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation

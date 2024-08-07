@@ -24,3 +24,7 @@ Before you begin, ensure you have met the following requirements:
 Click on the "Apply Transform" button to apply the transparent background. In case you want to clear the transformation applied to the video stream, click on the "Clear Transform" button.
 
 Click on the "Start Screen Sharing" button to start screen sharing and click on the "Stop Screen Sharing" button to stop screen sharing.
+
+## Live Demo
+
+Live demo can be found [here](https://neru-d0cab68b-web-js-custom-bg-removal-dev.apse1.runtime.vonage.cloud/).

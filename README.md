@@ -1,27 +1,26 @@
-Vonage Media Processor Demo
----------------------------
+# Video Background Removal using Custom Transformer
 
-This App showcases Vonage Media Processor Library capabilities, such as adding image onto the video frame or adding a party hat to someone's head using the Face Detection provided by MediapipeHelper.
+This repository contains code to modify a video stream using [@vonage/media-processor](https://www.npmjs.com/package/@vonage/media-processor) package.
+It allows users to remove background image from a video stream using a [custom transformer](https://github.com/tensorflow/tfjs-models/blob/master/body-segmentation/README.md).
 
-## 📚 Dependencies
-- [Vonage Video API](https://www.vonage.com/communications-apis/video/)
-- [Vonage ML Transformers](https://socket.dev/npm/package/@vonage/ml-transformers)
-- [MediaPipe Face Detection](https://google.github.io/mediapipe/solutions/face_detection.html)
-- [React.js](https://reactjs.org/)
+## Features
 
-## 🛠 Prerequisites
-1. Create a [Tokbox account](https://tokbox.com/account/) and create a new project with the type "Vonage Video API".
-2. Create a Vonage account with Neru capabilities enabled.
-3. Change the content of `SAMPLE_SERVER_BASE_URL` in `src/config.js` appropriately.
-4. If using Neru to deploy:
-    1. Copy and change the content of `BASE_URL`, `PROJECT_API_KEY`, and `PROJECT_API_SECRET` in `neru.yml.example` appropriately, in a new file named `neru.yml`.
-    2. Under `server/index.js`, comment out line 4-7 and use line 10-11.
-5. Otherwise, if using other services to deploy:  
-    1. Copy and change the content of `PORT`, `BASE_URL`, `PROJECT_API_KEY`, and `PROJECT_API_SECRET` in `.env.example` appropriately, in a new file named `.env`.
-    2. Under `server/index.js`, comment out line 10-11 and use line 4-7.
+- Remove background from video using a [custom transformer](https://github.com/tensorflow/tfjs-models/blob/master/body-segmentation/README.md).
 
-## ▶️ Running Project (Local)
-- If using Neru, execute `neru debug`
-- If using others, execute `npm start dev` 
-    - OpenTok requires https, so for testing purposes, setup a [ngrok tunnel](https://ngrok.com/). Open the URL accordingly.
-- The project is expecting `ref` params in the url, which should contain a valid JWT token.
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- You have installed the latest version of [Node.js](https://nodejs.org/en/).
+- You have a basic understanding of JavaScript.
+
+## Install
+
+1. Run `npm install`
+2. Run `vcr debug`
+
+## Usage
+
+Click on the "Apply Transform" button to apply the transparent background. In case you want to clear the transformations applied to the video stream, click on the "Clear Transform" button.
+
+Click on the "Start Screen Sharing" button to start screen sharing and click on the "Stop Screen Sharing" button to stop screen sharing.

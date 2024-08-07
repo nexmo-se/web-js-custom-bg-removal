@@ -1,10 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* global VideoFrame */
 
-import {
-	SAMPLE_SERVER_BASE_URL
-  } from './config';
-  
 import '@tensorflow/tfjs-core/dist/tf-core.min.js'
 import '@tensorflow/tfjs-backend-webgl/dist/tf-backend-webgl.min.js'
 import * as bodySegmentation from '@tensorflow-models/body-segmentation';

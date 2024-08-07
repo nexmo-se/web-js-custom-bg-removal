@@ -11,7 +11,7 @@ It allows users to remove background image from a video stream using a [custom t
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of [Node.js](https://nodejs.org/en/).
+- You have installed the latest version of [Node.js](https://nodejs.org/en/) and VCR.
 - You have a basic understanding of JavaScript.
 
 ## Install
@@ -21,6 +21,6 @@ Before you begin, ensure you have met the following requirements:
 
 ## Usage
 
-Click on the "Apply Transform" button to apply the transparent background. In case you want to clear the transformations applied to the video stream, click on the "Clear Transform" button.
+Click on the "Apply Transform" button to apply the transparent background. In case you want to clear the transformation applied to the video stream, click on the "Clear Transform" button.
 
 Click on the "Start Screen Sharing" button to start screen sharing and click on the "Stop Screen Sharing" button to stop screen sharing.
